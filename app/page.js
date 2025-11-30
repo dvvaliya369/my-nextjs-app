@@ -2,6 +2,9 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
+  console.log('====================================');
+  console.log(process.env.NEXT_PUBLIC_URL);
+  console.log('====================================');
   return (
     <div className={styles.page}>
       <main className={styles.main}>
