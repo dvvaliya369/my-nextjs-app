@@ -2,9 +2,9 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
-  console.log('====================================');
+  console.log("====================================");
   console.log(process.env.NEXT_PUBLIC_URL);
-  console.log('====================================');
+  console.log("====================================");
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -16,28 +16,6 @@ export default function Home() {
           height={20}
           priority
         />
-        <div className={styles.intro}>
-          <h1>Lets get started</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
         <div className={styles.ctas}>
           <a
             className={styles.primary}
