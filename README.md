@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Next.js App
 
-## Getting Started
+A modern web application built with Next.js, React, and TypeScript.
 
-First, run the development server:
+## Description
+
+This is a Next.js project bootstrapped with `create-next-app`. It provides a solid foundation for building fast, scalable web applications with React and Next.js.
+
+## Prerequisites
+
+- Node.js 22 or later
+- pnpm (recommended) or npm
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd my-nextjs-app
+   ```
+
+2. Install dependencies:
+   ```bash
+   pnpm install
+   # or
+   npm install
+   ```
+
+## Usage
+
+### Development
+
+Start the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
 # or
-bun dev
+npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Building
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build the application for production:
 
-## Learn More
+```bash
+pnpm build
+# or
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Starting Production Server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Start the production server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+pnpm start
+# or
+npm run start
+```
 
-## Deploy on Vercel
+## Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `dev`: Start the development server
+- `build`: Build the application for production
+- `start`: Start the production server
+- `lint`: Run linting with Biome
+- `format`: Format code with Biome
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Technologies Used
+
+- **Next.js** 16.0.7 - React framework for production
+- **React** 19.2.0 - UI library
+- **Biome** - Linting and formatting tool
+- **Babel Plugin React Compiler** - React compiler plugin
+
+## Project Structure
+
+```
+my-nextjs-app/
+├── app/                 # Next.js app directory
+│   ├── globals.css      # Global styles
+│   ├── layout.js        # Root layout
+│   ├── page.js          # Home page
+│   └── page.module.css  # Page-specific styles
+├── public/              # Static assets
+├── package.json         # Dependencies and scripts
+├── next.config.mjs      # Next.js configuration
+├── biome.json           # Biome configuration
+└── jsconfig.json        # JavaScript configuration
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run linting: `pnpm lint`
+5. Format code: `pnpm format`
+6. Submit a pull request
+
+## License
+
+This project is private.
