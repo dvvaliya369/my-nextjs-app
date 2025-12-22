@@ -1,0 +1,105 @@
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  background: #1a1a1a;
+  border-right: 1px solid #2a2a2a;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge {
+  background: #2a2a2a;
+  color: #888;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.taskItem {
+  padding: 12px;
+  border-radius: 8px;
+  background: #222;
+  border: 1px solid #2a2a2a;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.taskItem:hover {
+  background: #282828;
+  border-color: #3a3a3a;
+  transform: translateX(2px);
+}
+
+.taskHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.statusIndicator {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.taskItem.completed .statusIndicator {
+  color: #4ade80;
+}
+
+.taskItem.in-progress .statusIndicator {
+  color: #60a5fa;
+}
+
+.taskItem.pending .statusIndicator {
+  color: #666;
+}
+
+.taskTitle {
+  font-size: 13px;
+  color: #d0d0d0;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.taskItem.completed .taskTitle {
+  color: #888;
+  text-decoration: line-through;
+}
+
+.taskTime {
+  font-size: 11px;
+  color: #666;
+  margin-top: 6px;
+  display: block;
+  padding-left: 26px;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 240px;
+  }
+}
