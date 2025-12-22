@@ -1,6 +1,13 @@
 # Hello World
 
-This is a Next.js project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Welcome to this Next.js project! This application is bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) and ready for development.
+
+## Features
+
+- ⚡ Next.js 14+ with App Router
+- 🎨 Modern and responsive design
+- 🚀 Fast development with hot reload
+- 📦 Optimized for production
 
 ## Getting Started
 

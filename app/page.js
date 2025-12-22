@@ -2,9 +2,6 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
-  console.log('====================================');
-  console.log(process.env.NEXT_PUBLIC_URL);
-  console.log('====================================');
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -12,14 +9,17 @@ export default function Home() {
           className={styles.logo}
           src="/next.svg"
           alt="Next.js logo"
-          width={100}
-          height={20}
+          width={180}
+          height={37}
           priority
         />
         <div className={styles.intro}>
-          <h1>Lets get started</h1>
+          <h1>Welcome to Next.js!</h1>
           <p>
-            Looking for a starting point or more instructions? Head over to{" "}
+            Get started by editing <code>app/page.js</code> and see your changes in real-time.
+          </p>
+          <p>
+            Explore{" "}
             <a
               href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
               target="_blank"
@@ -27,15 +27,15 @@ export default function Home() {
             >
               Templates
             </a>{" "}
-            or the{" "}
+            or visit the{" "}
             <a
               href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Learning
+              Learning Center
             </a>{" "}
-            center.
+            to dive deeper.
           </p>
         </div>
         <div className={styles.ctas}>
