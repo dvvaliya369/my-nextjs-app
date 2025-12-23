@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Next.js App
 
-## Getting Started
+A modern Next.js application built with React 19 and Next.js 16, featuring a clean starting point for web development.
 
-First, run the development server:
+## Features
 
+- **Next.js 16**: Latest version with App Router
+- **React 19**: Modern React with concurrent features
+- **Biome**: Fast linting and formatting
+- **JavaScript**: Configured for JavaScript development
+- **Optimized Fonts**: Uses Geist font family from Vercel
+
+## Prerequisites
+
+- Node.js 22 or later
+- pnpm package manager
+
+## Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd my-nextjs-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+pnpm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Development
+
+Start the development server:
+
+```bash
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+### Building
+
+Build the application for production:
+
+```bash
+pnpm build
+```
+
+### Production
+
+Start the production server:
+
+```bash
+pnpm start
+```
+
+## Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm lint` - Run linting with Biome
+- `pnpm format` - Format code with Biome
+
+## Project Structure
+
+```
+my-nextjs-app/
+├── app/
+│   ├── globals.css
+│   ├── layout.js
+│   ├── page.js
+│   └── page.module.css
+├── public/
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   └── vercel.svg
+├── package.json
+├── next.config.mjs
+├── jsconfig.json
+├── biome.json
+└── README.md
+```
+
+## Deployment
+
+### Vercel (Recommended)
+
+The easiest way to deploy is using Vercel:
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically
+
+### Other Platforms
+
+This is a standard Next.js application that can be deployed to any platform supporting Node.js:
+
+- Netlify
+- Railway
+- Render
+- AWS Amplify
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://react.dev)
+- [Biome Documentation](https://biomejs.dev)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run `pnpm lint` and `pnpm format`
+5. Submit a pull request
